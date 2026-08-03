@@ -3,6 +3,11 @@
 > Developer-first browser.
 > Built for focus, transparency, and productivity.
 
+**Developer-first browser.**
+> Fast to Work.
+> Easy to Reason.
+> Hard to Misuse
+
 ## Mission
 
 開発者の時間を奪わない。
