@@ -1,30 +1,68 @@
-Trueful Documentation
+📚 Trueful Documentation
 
 Language: English | 日本語
 
+⸻
+
+Overview
+
 Welcome to the official documentation for Trueful.
 
-This directory contains the project’s design documents, architecture, and development notes.
+This directory contains the design philosophy, architecture, technical specifications, and development notes of the project.
 
-Documents
+⸻
 
-* philosophy.md — Core philosophy, mission, and design principles.
-* architecture.md — System architecture and technical decisions.
+Documentation
+
+📖 Philosophy
+
+* philosophy.md — Mission, vision, and design principles.
+
+🏗️ Architecture
+
+* architecture.md — System architecture and architectural decisions.
+
+🎨 Design
+
 * design-system.md — UI design system and visual guidelines.
+
+⚙️ Specifications
+
 * specification.md — Functional and technical specifications.
+
+🗺️ Roadmap
+
 * roadmap.md — Development roadmap and milestones.
-* lessons/ — Development notes and learning materials.
 
-Purpose
+📓 Development Notes
 
-Trueful is a developer-first browser designed around one principle:
+* lessons/ — Learning notes and development journal.
+
+⸻
+
+Project Philosophy
+
+Trueful is a developer-first browser built around one core idea.
 
 “Never waste a developer’s time.”
 
-The documentation in this directory explains not only how Trueful is built, but also why each design decision was made.
+Every design decision should make developers reach information faster, work more efficiently, and stay focused.
+
+⸻
+
+Document Structure
+
+This documentation explains:
+
+* Why Trueful is designed this way.
+* How each feature works.
+* What decisions were made during development.
+
+⸻
 
 Status
 
-The project is currently under active development.
+Current Status: 🚧 Active Development
 
-Documents may change as the architecture evolves.
+The documentation evolves together with the project.
+Some pages may change as the architecture matures.
