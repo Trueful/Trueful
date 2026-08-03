@@ -1,3 +1,6 @@
+🇯🇵 Japanese README:
+[README.ja.md](README.ja.md)
+
 # Trueful
 
 > Developer-first browser built for focus, transparency, and productivity.
@@ -102,8 +105,3 @@ Contribution guidelines will be published once the project reaches its first pub
 ## License
 
 TBD
-
----
-
-🇯🇵 Japanese README:
-[README.ja.md](README.ja.md)
