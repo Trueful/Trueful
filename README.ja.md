@@ -1,3 +1,6 @@
+🇬🇧 English README:
+[README.md](README.md)
+
 # Trueful
 
 > 開発者のために設計されたブラウザ。
@@ -102,8 +105,3 @@ Public Preview公開時に整備予定です。
 ## ライセンス
 
 未定（TBD）
-
----
-
-🇬🇧 English README:
-[README.md](README.md)
