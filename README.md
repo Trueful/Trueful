@@ -1,49 +1,109 @@
 # Trueful
 
-> Developer-first browser.
-> Built for focus, transparency, and productivity.
+> Developer-first browser built for focus, transparency, and productivity.
 
-**Developer-first browser.**
-> Fast to Work.
-> Easy to Reason.
-> Hard to Misuse
+**Fast to Work. Easy to Reason. Hard to Misuse.**
+
+---
 
 ## Mission
 
-開発者の時間を奪わない。
+Trueful exists to help developers reach the information they need as quickly, safely, and clearly as possible.
+
+A browser should not merely display web pages.
+It should serve as a developer's workspace.
+
+---
 
 ## Vision
 
-Webを開発者仕様へ再構成する。
+Trueful reorganizes the web for developers.
 
-## Philosophy
+Documentation, APIs, GitHub repositories, SDKs, changelogs, and service status pages should always be within immediate reach.
+
+Developers should never get lost.
+
+---
+
+## Core Principles
 
 - Developer First
+- Time First
 - No Confusion
+- Transparency
 - Workspace First
 - Local First
-- Time First
+- Keyboard First
+- Everything Configurable
+- Failure Friendly
+
+---
 
 ## Current Status
 
-🚧 Pre-Alpha
+🚧 **Pre-Alpha**
 
-現在は設計・基盤開発中です。
+Trueful is currently under active design and development.
+
+The architecture, philosophy, and core systems are being built before the first public release.
+
+---
+
+## Planned Features
+
+- Workspace-based browsing
+- Independent sessions per workspace
+- Security Profiles
+- Inspector Bar
+- Local AI Assistant
+- AI Broker
+- Plugin System
+- Chrome Extension Compatibility
+- Git-friendly Workspace format
+
+---
 
 ## Roadmap
 
-- [ ] Browser shell
+- [ ] Project foundation
+- [ ] Electron application
 - [ ] Workspace system
-- [ ] Security Profiles
 - [ ] Inspector Bar
+- [ ] Security Profiles
 - [ ] AI Broker
-- [ ] Plugin System
-- [ ] First Public Preview
+- [ ] Inspector Agent
+- [ ] Plugin API
+- [ ] Public Preview
+
+---
 
 ## Documentation
 
-ドキュメントは `docs/` ディレクトリで管理します。
+Project documentation is available inside the `docs/` directory.
+
+The documentation includes:
+
+- Philosophy
+- Architecture
+- Development Lessons
+- Design System
+- Roadmap
+
+---
+
+## Contributing
+
+Trueful is currently in early development.
+
+Contribution guidelines will be published once the project reaches its first public preview.
+
+---
 
 ## License
 
 TBD
+
+---
+
+🇯🇵 Japanese README:
+[README.ja.md](README.ja.md)
