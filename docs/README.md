@@ -1,5 +1,7 @@
 Trueful Documentation
 
+Language: English | 日本語
+
 Welcome to the official documentation for Trueful.
 
 This directory contains the project’s design documents, architecture, and development notes.
@@ -24,4 +26,5 @@ The documentation in this directory explains not only how Trueful is built, but 
 Status
 
 The project is currently under active development.
+
 Documents may change as the architecture evolves.
