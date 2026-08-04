@@ -1,5 +1,6 @@
 # Dependencies
 node_modules/
+.pnpm-store/
 
 # Build
 dist/
@@ -23,7 +24,9 @@ pnpm-debug.log*
 Thumbs.db
 
 # VS Code
-.vscode/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
 
 # JetBrains
 .idea/
@@ -36,6 +39,8 @@ coverage/
 
 # Electron
 *.asar
+.cache/
+electron-builder-cache/
 
 # SQLite
 *.db
