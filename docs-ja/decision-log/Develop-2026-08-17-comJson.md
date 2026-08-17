@@ -64,6 +64,18 @@ export function writeJsonFile(path: string, data: unknown): string {
 
 ## 問題と対処
 
+### `services`/`flows`の役割分担の記憶違い
+
+- **症状**: セッション冒頭、「servicesが複数serviceをまとめる集大成、flowsがこまごました個別操作」という、以前確定させた定義(ADR-011前後)と逆の認識で会話を進めていた
+- **原因**: 記憶の混同。以前のADRでは「services=単一責任の小さな操作、flows=servicesを組み合わせたユースケース単位の処理」と定義していた
+- **対処**: `shared/types.ts`の配置場所を検討する過程で認識のズレに気づき、その場で訂正。以降の設計判断(COM側jsonの責務分離など)は正しい定義に基づいて進めた
+
+### `number & null` と `number | null` の混同
+
+- **症状**: `isArchivable`の型定義で、`dormantedTimeMs: number & null`と記述した
+- **原因**: TypeScriptのUnion型(`|`、AまたはB)とIntersection型(`&`、AかつB)を取り違えた。`number & null`は「numberでありながらnullでもある値」を意味し、実際には存在しえない型になっていた
+- **対処**: `number | null`に修正
+
 ### `typeof dormantedTimeMs == null` が意図通り動かない懸念
 
 - **症状**: `null`チェックに`typeof dormantedTimeMs == null`という書き方を使っていた
@@ -75,6 +87,12 @@ export function writeJsonFile(path: string, data: unknown): string {
 - **症状**: `catch (e) { return String(e.message) }`のように、キャッチしたエラーの`.message`に直接アクセスしようとしていた
 - **原因**: TypeScriptでは`catch`節の変数`e`の型はデフォルトで`unknown`扱いとなり、型が確定していないプロパティに無条件でアクセスできない制約がある
 - **対処**: 最終的に`try/catch`自体を削除する方針に切り替えたため、このエラーアクセスの問題は実装上は解消(発生しなくなった)
+
+### `writeJsonFile`の不要な`try/catch`ラッパー
+
+- **症状**: `writeJsonFile`内で`try { ... } catch (e) { throw e }`という、キャッチしても何も加工せずそのまま投げ直すだけの`try/catch`を書いていた
+- **原因**: 「将来エラーハンドリングを拡張する受け皿として残したい」という意図で一度は残す判断をしたが、実質的に処理が素通りになっていることをESLintに指摘されるまで自覚していなかった
+- **対処**: ESLintの「Unnecessary try/catch wrapper」指摘を受けて`try/catch`ごと削除。`fs.writeFileSync`のエラーは自然に呼び出し元へ伝播する形にした
 
 ## 判断ログ
 
