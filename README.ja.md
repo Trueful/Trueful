@@ -30,6 +30,8 @@ TruefulはWebを開発者仕様へ再構成します。
 
 ## 基本理念
 
+※各原則には優先順位があります。衝突時の判定基準は docs-ja/philosophy/priority-layers.md を参照
+
 - Developer First
 - Time First
 - No Confusion
